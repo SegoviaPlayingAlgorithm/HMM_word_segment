@@ -1,5 +1,8 @@
-HMM_word_segment   :   封装好的HMM类，类的成员函数函数train--训练和储存参数  getpos--完成分词BMES标注
+HMM_word_segment   :   封装好的HMM类
+类的成员函数函数train--训练和储存参数
+getpos--完成分词BMES标注
 HMMws_train和test : 训练和预测，你可以自己修改数据集
+
 HMM有三个参数A B pi，在训练集有标注的情况下使用频率替代概率即可完成三个参数的估计，具体地：
 ![微信图片_20250516103257](https://github.com/user-attachments/assets/f0dbbbed-74b1-4128-9dc3-23511cc0166f)
 然后用维特比算法计算具有极大似然地隐状态路径，所谓最大路径，本实验中状态有4种，开头B中间M结尾E独立词S
